@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!--
+	Paradigm Shift by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>DAV Proposal</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Intro -->
+      <section class="intro">
+        <header>
+          <h1 style="color: #f5cf48">DAV Proposal</h1>
+          <p style="color: #ffffff">Claire Huang, 2023</p>
+        </header>
+        <div class="content">
+          <span class="image fill" data-position="center"
+            ><img src="images/daveoke.jpeg" alt=""
+          /></span>
+        </div>
+      </section>
+
+      <!-- Section -->
+      <section id="first">
+        <header>
+          <h2 style="color: #f5cf48">Lecture Plan</h2>
+        </header>
+        <div class="content">
+          <h2>Lecture 1: Introduction</h2>
+          <ul>
+            <li>Introduction to the project</li>
+            <li>This is the FPGA project, why FPGAs?</li>
+            <li>General purpose CPU vs FPGA vs ASIC</li>
+            <li>How do we program them? It's Verilog time</li>
+            <li>Introduction to Verilog - modules, wires, bitwise review</li>
+            <li>Introduction to our FPGA in particular</li>
+          </ul>
+          <h2>Lecture 2: Combinational Logic + More Verilog</h2>
+          <ul>
+            <li>Overview of digital design and why it's useful</li>
+            <li>Review of gates and boolean expressions</li>
+            <li>Always blocks and reg's</li>
+            <li>Multiplexers and what they look like in Verilog</li>
+            <li>Other iterative statements (for, while loops)</li>
+            <li>Basics of testbenching + sample use cases</li>
+          </ul>
+          <h2>Lecture 3: Sequential Logic</h2>
+          <ul>
+            <li>Why sequential? aka. why Verilog is Different</li>
+            <li>Clocks and clock dividing</li>
+            <li>Sensitivity lists and posedge / negedge</li>
+            <li>
+              Building off the above, latches and why they should be canceled
+            </li>
+            <li>Blocking versus nonblocking</li>
+            <li>Finite state machines and what they look like in Verilog</li>
+          </ul>
+          <h2>Lecture 4: VGA</h2>
+          <ul>
+            <li>What is VGA</li>
+            <li>Frame buffers</li>
+            <li>Ping pong memory</li>
+          </ul>
+          <h2>Lecture 5: Good Verilog practices + CS 33 Review</h2>
+          <ul>
+            <li>
+              Parameters, name things well, make sure you always have defined
+              behavior
+            </li>
+            <li>PLLs as clock dividers</li>
+            <li>Logic analyzer and how to use it</li>
+            <li>RAM, BRAM and how to use them in Verilog</li>
+          </ul>
+          <h2>Track separation time!</h2>
+
+          <h2>Lecture 6: Serial Communication</h2>
+          <ul>
+            <li>What is serial communication?</li>
+            <li>what makes a good protocol + examples of protocols</li>
+            <li>Thorough walkthrough of I2C</li>
+          </ul>
+          <h2>Lecture 7: Fast Fourier Transforms</h2>
+          <ul>
+            <li>Fourier transforms and sampling</li>
+            <li>Fast fourier transforms</li>
+            <li>Butterfly unit and twiddle factors</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Section -->
+      <section>
+        <header>
+          <h2 style="color: #f5cf48">Lab Plan</h2>
+        </header>
+        <div class="content">
+          <h2>Lab 1: Setup + Intro to Verilog</h2>
+          <p>Learning goals:</p>
+          <ul>
+            <li>Getting used to Verilog syntax</li>
+            <li>Bitwise operations, either decryption/encryption</li>
+            <li>Ideally, getting used to IDE</li>
+          </ul>
+          <h2>Lab 2: Working with the FPGA</h2>
+          <p>Learning goals:</p>
+          <ul>
+            <li>The joy that is pin planning</li>
+            <li>Manipulating FPGA parts with Verilog</li>
+            <li>Button debouncing</li>
+            <li>Getting inputs from FPGA</li>
+          </ul>
+          <h2>Lab 3: Finite state machines and sequential logic</h2>
+          <p>Learning goals:</p>
+          <ul>
+            <li>Finite state machines are pretty important</li>
+            <li>Sequential logic triggered on conditions</li>
+          </ul>
+          <h2>Lab 4: VGA</h2>
+          <p>Learning goals:</p>
+          <ul>
+            <li>Get FPGA to communicate with VGA</li>
+            <li>Display graphics on VGA that can be manipulated by FPGA</li>
+          </ul>
+          <h2>Lab 5: Depending on what track, FFT or I2C</h2>
+          <p>
+            Making the other lab optional to cut down on DAV workload, and get
+            project proposals started earlier
+          </p>
+          <p>Learning outcomes:</p>
+          <ul>
+            <li>FFT: Make FFT processor and figure out butterfly units</li>
+            <li>I2C: Get FPGA to communicate with nunchuk</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Section -->
+      <section>
+        <header>
+          <h2 style="color: #f5cf48">Proposed Changes</h2>
+        </header>
+        <div class="content">
+          <!-- Section -->
+          <section>
+            <header>
+              <h3 style="color: #ffffff">Organization</h3>
+            </header>
+            <div class="content">
+              <h3>Emphasizing track separation</h3>
+              <ul>
+                <li>
+                  DAV is already quite a bit of work; allowing students to focus
+                  on what they need for capstone will cut down on workload
+                </li>
+                <li>
+                  Students are still able to complete the other lab if they wish
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Section -->
+          <section>
+            <header>
+              <h3 style="color: #ffffff">More emphasis on verification</h3>
+            </header>
+            <div class="content">
+              <h3>(more testbenches)</h3>
+              <ul>
+                <li>
+                  Get students used to testbenching to solve their problems
+                </li>
+                <li>Logic analyzer for verifying communication tests</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Section -->
+          <section>
+            <header>
+              <h3 style="color: #ffffff">More visualizations</h3>
+            </header>
+            <div class="content">
+              <h3>(publicity moment)</h3>
+              <ul>
+                <li>
+                  When DAV delves into difficult topics, more visualizations
+                  will make the content more digestible
+                </li>
+                <li>
+                  Don't necessarily want students to have to figure these
+                  concepts out while doing labs; ideally, the lecture teaches
+                  them and they know what they're doing going into the lab
+                </li>
+                <li>
+                  Step by step walkthroughs with drawings or visuals may help
+                  this process
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- Section -->
+      <section>
+        <header>
+          <h2 style="color: #f5cf48">Conclusion</h2>
+        </header>
+        <div class="content">
+          <p>
+            <strong>DAV already has a strong foundation.</strong> The goal is to
+            continue to refine DAV to make it more established and concrete, so
+            that others may be able to use DAV's curriculum.
+          </p>
+          <p>
+            At the same time, adding to DAV at this point doesn't make too much
+            sense. Assuming future leads (like now) join DAV and complete one of
+            the two tracks, they can learn the other after they become leads.
+            Adding more material would steepen the learning curve, and future
+            leads may find more additions hard to keep.
+          </p>
+        </div>
+      </section>
+
+      <!-- Copyright -->
+      <div class="copyright">
+        &copy; DAV Proposal. All rights reserved. Design:
+        <a href="https://html5up.net">HTML5 UP</a>.
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
