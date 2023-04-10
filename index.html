@@ -37,114 +37,261 @@
       <!-- Section -->
       <section id="first">
         <header>
-          <h2 style="color: #f5cf48">Lecture Plan</h2>
+          <h2 style="color: #f5cf48">Lecture and Lab Plan</h2>
         </header>
         <div class="content">
-          <h2>Lecture 1: Introduction</h2>
-          <ul>
-            <li>Introduction to the project</li>
-            <li>This is the FPGA project, why FPGAs?</li>
-            <li>General purpose CPU vs FPGA vs ASIC</li>
-            <li>How do we program them? It's Verilog time</li>
-            <li>Introduction to Verilog - modules, wires, bitwise review</li>
-            <li>Introduction to our FPGA in particular</li>
-          </ul>
-          <h2>Lecture 2: Combinational Logic + More Verilog</h2>
-          <ul>
-            <li>Overview of digital design and why it's useful</li>
-            <li>Review of gates and boolean expressions</li>
-            <li>Always blocks and reg's</li>
-            <li>Multiplexers and what they look like in Verilog</li>
-            <li>Other iterative statements (for, while loops)</li>
-            <li>Basics of testbenching + sample use cases</li>
-          </ul>
-          <h2>Lecture 3: Sequential Logic</h2>
-          <ul>
-            <li>Why sequential? aka. why Verilog is Different</li>
-            <li>Clocks and clock dividing</li>
-            <li>Sensitivity lists and posedge / negedge</li>
-            <li>
-              Building off the above, latches and why they should be canceled
-            </li>
-            <li>Blocking versus nonblocking</li>
-            <li>Finite state machines and what they look like in Verilog</li>
-          </ul>
-          <h2>Lecture 4: VGA</h2>
-          <ul>
-            <li>What is VGA</li>
-            <li>Frame buffers</li>
-            <li>Ping pong memory</li>
-          </ul>
-          <h2>Lecture 5: Good Verilog practices + CS 33 Review</h2>
-          <ul>
-            <li>
-              Parameters, name things well, make sure you always have defined
-              behavior
-            </li>
-            <li>PLLs as clock dividers</li>
-            <li>Logic analyzer and how to use it</li>
-            <li>RAM, BRAM and how to use them in Verilog</li>
-          </ul>
-          <h2>Track separation time!</h2>
+          <!-- Section -->
+          <section>
+            <header>
+              <h3 style="color: #ffffff">Organization</h3>
+            </header>
+            <div class="content">
+              <h3>Fall Quarter</h3>
+              <h2>Lecture 1: Introduction (Week 3)</h2>
+              <ul>
+                <li>Introduction to the project</li>
+                <li>This is the FPGA project, why FPGAs?</li>
+                <li>General purpose CPU vs FPGA vs ASIC</li>
+                <li>How do we program them? It's Verilog time</li>
+                <li>
+                  Introduction to Verilog - modules, wires, bitwise review
+                </li>
+                <li>Introduction to our FPGA in particular</li>
+              </ul>
+              <p>
+                <strong>Explanation: </strong> I'm putting all of the
+                introductory information to the project in the first lecture, to
+                give students a high-level view of what they'll be working with.
+                Verilog will be somewhat covered, with an emphasis on how it's
+                different than other programming languages that students may
+                have seen before, but most of the teaching of Verilog will be
+                done separately.
+              </p>
+              <h2>DAV'ing: Quartus Setup + Questa Reading + Verilog</h2>
+              <p>
+                Quartus was one of the hardest things to set up, so being there
+                in person to help students set it up would be optimal.
+              </p>
+              <p>
+                Questa also has some quirks that might be helpful to teach in
+                person.
+              </p>
+              <p>
+                Finally, while Lecture 1 does cover some basic Verilog, which
+                will be enough to help students do the first lab, this
+                worksession / workshop will be a chance for students to ask
+                questions and get a head start on the lab.
+              </p>
+              <h2>
+                Lab 1: Setup + Intro to Verilog (Released after 1st lecture, due
+                Week 5)
+              </h2>
+              <p>Learning goals:</p>
+              <ul>
+                <li>Getting used to Verilog syntax</li>
+                <li>Bitwise operations, either decryption/encryption</li>
+                <li>Ideally, getting used to IDE</li>
+              </ul>
 
-          <h2>Lecture 6: Serial Communication</h2>
-          <ul>
-            <li>What is serial communication?</li>
-            <li>what makes a good protocol + examples of protocols</li>
-            <li>Thorough walkthrough of I2C</li>
-          </ul>
-          <h2>Lecture 7: Fast Fourier Transforms</h2>
-          <ul>
-            <li>Fourier transforms and sampling</li>
-            <li>Fast fourier transforms</li>
-            <li>Butterfly unit and twiddle factors</li>
-          </ul>
+              <h2>Lecture 2: Combinational Logic + More Verilog (Week 5)</h2>
+              <ul>
+                <li>Overview of digital design and why it's useful</li>
+                <li>Review of gates and boolean expressions</li>
+                <li>Always blocks and reg's</li>
+                <li>Multiplexers and what they look like in Verilog</li>
+                <li>Other iterative statements (for, while loops)</li>
+                <li>Basics of testbenching</li>
+              </ul>
+              <p>
+                <strong>Explanation: </strong> In order to teach students how to
+                write code that is synthesizable, logic elements such as
+                multiplexers will be covered. Information on the basic logic
+                gates will be included in the slides as a recap, but may not be
+                emphasized.
+              </p>
+
+              <h2>
+                Lab 2: Working with the FPGA (Released after the 2nd lecture;
+                due Week 7)
+              </h2>
+              <p>Learning goals:</p>
+              <ul>
+                <li>The joy that is pin planning</li>
+                <li>Manipulating FPGA parts with Verilog</li>
+                <li>Button debouncing</li>
+                <li>Getting inputs from FPGA</li>
+              </ul>
+
+              <h2>Lecture 3: Sequential Logic (Week 7)</h2>
+              <ul>
+                <li>Why sequential? aka. why Verilog is Different</li>
+                <li>Clocks and clock dividing</li>
+                <li>Sensitivity lists and posedge / negedge</li>
+                <li>
+                  Building off the above, latches and why they should be
+                  canceled
+                </li>
+                <li>Blocking versus nonblocking</li>
+                <li>
+                  Finite state machines and what they look like in Verilog
+                </li>
+              </ul>
+              <p>
+                <strong>Explanation: </strong>Due to the importance of FSMs,
+                there will be examples of what they look like in Verilog.
+              </p>
+
+              <h2>
+                Lab 3: Finite state machines and sequential logic (Released
+                after the 3rd lecture; due Week 9)
+              </h2>
+              <p>Learning goals:</p>
+              <ul>
+                <li>Finite state machines are pretty important</li>
+                <li>Sequential logic triggered on conditions</li>
+              </ul>
+
+              <h2>DAV'Ing: Testbenching</h2>
+              <p>
+                Showcasing different scenarios and testbenches that would help
+                Working with Questa to debug
+              </p>
+
+              <h2>Lecture 4: Good Verilog practices + CS 33 Review (Week 9)</h2>
+              <ul>
+                <li>
+                  Parameters, name things well, make sure you always have
+                  defined behavior
+                </li>
+                <li>PLLs as clock dividers</li>
+                <li>Logic analyzer and how to use it</li>
+                <li>RAM, BRAM and how to use them in Verilog</li>
+              </ul>
+              <p>
+                <strong>Explanation: </strong> This lecture isn't accompanied
+                with a lab, and it's a nice way to wrap up the quarter. Fall
+                quarter is mostly about getting the basics down with just the
+                FPGA; peripherals and more capstone related topics will be
+                covered in the next quarter.
+              </p>
+            </div>
+          </section>
+
+          <!-- Section -->
+          <section>
+            <header>
+              <h3 style="color: #ffffff">Winter Quarter</h3>
+            </header>
+            <div class="content">
+              <h2>Lecture 5: VGA (Week 2)</h2>
+              <ul>
+                <li>What is VGA</li>
+                <li>Frame buffers</li>
+                <li>Ping pong memory</li>
+              </ul>
+              <p>
+                <strong>Explanation: </strong>This is the last lecture that
+                applies to both tracks, so it will be covered first. From here
+                on out, people in either track can choose to specialize to
+                conserve their time. Project proposals will probably have to
+                start happening around this time, too.
+              </p>
+
+              <h2>Lab 4: VGA (Released after lecture 4, due Week 4)</h2>
+              <p>Learning goals:</p>
+              <ul>
+                <li>Get FPGA to communicate with VGA</li>
+                <li>Display graphics on VGA that can be manipulated by FPGA</li>
+              </ul>
+
+              <h2>Track separation time!</h2>
+
+              <h2>Lecture 6: Serial Communication (Week 4)</h2>
+              <ul>
+                <li>What is serial communication?</li>
+                <li>what makes a good protocol + examples of protocols</li>
+                <li>Thorough walkthrough of I2C</li>
+              </ul>
+
+              <h2>
+                DAV'Ing (Just for fun): Demonstration of other communications
+                protocols that aren't I2C
+              </h2>
+              <p>
+                Would also be a demonstration of how to use the logic analyzer,
+                as well as more FSM review.
+              </p>
+              <p>(It's an excuse to show off how the bongos worked)</p>
+
+              <h2>Project Proposals Due Week 5</h2>
+
+              <h2>
+                Lab 5: Depending on what track, FFT or I2C (released after
+                lecture 6, due Week 8)
+              </h2>
+              <p>
+                Making the other lab optional to cut down on DAV workload, and
+                get project proposals started earlier
+              </p>
+              <p>Learning outcomes:</p>
+              <ul>
+                <li>FFT: Make FFT processor and figure out butterfly units</li>
+                <li>I2C: Get FPGA to communicate with nunchuk</li>
+              </ul>
+              <h2>Lecture 7: Fast Fourier Transforms (Week 6)</h2>
+              <ul>
+                <li>Fourier transforms and sampling</li>
+                <li>Fast fourier transforms</li>
+                <li>Butterfly unit and twiddle factors</li>
+              </ul>
+
+              <h2>DAV'Ing: Whatever topic students want (will poll)</h2>
+              <h2>
+                Design reviews done + FFT capstone spec released by week 10
+              </h2>
+            </div>
+          </section>
+
+          <!-- Section -->
+          <section>
+            <header>
+              <h3 style="color: #ffffff">Spring Quarter</h3>
+            </header>
+            <div class="content">
+              <h2>Week 3: First capstone check-in</h2>
+              <h2>DAV'Ing: Whatever topic students want (will poll)</h2>
+              <h2>Week 5: Second capstone check-in</h2>
+              <h2>DAV'Ing: Whatever topic students want (will poll)</h2>
+              <h2>Week 7: Last capstone check-in</h2>
+            </div>
+          </section>
         </div>
       </section>
+      =
 
       <!-- Section -->
       <section>
         <header>
-          <h2 style="color: #f5cf48">Lab Plan</h2>
+          <h2 style="color: #f5cf48">Deposit Plan / Drop Policy</h2>
         </header>
         <div class="content">
-          <h2>Lab 1: Setup + Intro to Verilog</h2>
-          <p>Learning goals:</p>
+          <h2>The deposit will be $50, returned as follows:</h2>
           <ul>
-            <li>Getting used to Verilog syntax</li>
-            <li>Bitwise operations, either decryption/encryption</li>
-            <li>Ideally, getting used to IDE</li>
+            <li>$10 returned upon completion of fall labs</li>
+            <li>$15 returned upon completion of winter labs</li>
+            <li>$25 returned upon completion of spring labs + capstone</li>
           </ul>
-          <h2>Lab 2: Working with the FPGA</h2>
-          <p>Learning goals:</p>
-          <ul>
-            <li>The joy that is pin planning</li>
-            <li>Manipulating FPGA parts with Verilog</li>
-            <li>Button debouncing</li>
-            <li>Getting inputs from FPGA</li>
-          </ul>
-          <h2>Lab 3: Finite state machines and sequential logic</h2>
-          <p>Learning goals:</p>
-          <ul>
-            <li>Finite state machines are pretty important</li>
-            <li>Sequential logic triggered on conditions</li>
-          </ul>
-          <h2>Lab 4: VGA</h2>
-          <p>Learning goals:</p>
-          <ul>
-            <li>Get FPGA to communicate with VGA</li>
-            <li>Display graphics on VGA that can be manipulated by FPGA</li>
-          </ul>
-          <h2>Lab 5: Depending on what track, FFT or I2C</h2>
+          <p></p>
+
+          <h2>Drop policy</h2>
           <p>
-            Making the other lab optional to cut down on DAV workload, and get
-            project proposals started earlier
+            Teams will be dropped after three weeks of not finishing a project
+            and no communication.
           </p>
-          <p>Learning outcomes:</p>
-          <ul>
-            <li>FFT: Make FFT processor and figure out butterfly units</li>
-            <li>I2C: Get FPGA to communicate with nunchuk</li>
-          </ul>
+          <p>
+            In order to get extensions, teams just need to be communicative and
+            show their progress, whether it's in person or with screenshots.
+          </p>
         </div>
       </section>
 
@@ -167,7 +314,13 @@
                   on what they need for capstone will cut down on workload
                 </li>
                 <li>
-                  Students are still able to complete the other lab if they wish
+                  Students are still able to complete the other lab if they
+                  wish, it's just no longer mandatory
+                </li>
+                <li>
+                  After a certain point after the lab deadlines, solutions will
+                  be released to help with capstone progress. In terms of the
+                  optional
                 </li>
               </ul>
             </div>
@@ -185,6 +338,7 @@
                   Get students used to testbenching to solve their problems
                 </li>
                 <li>Logic analyzer for verifying communication tests</li>
+                <li>Workshops and main lecture time to cover these topics</li>
               </ul>
             </div>
           </section>
@@ -202,9 +356,9 @@
                   will make the content more digestible
                 </li>
                 <li>
-                  Don't necessarily want students to have to figure these
-                  concepts out while doing labs; ideally, the lecture teaches
-                  them and they know what they're doing going into the lab
+                  Also working towards the goal of making slides easily
+                  accessible if the curriculum were to be passed on to other
+                  schools
                 </li>
                 <li>
                   Step by step walkthroughs with drawings or visuals may help
